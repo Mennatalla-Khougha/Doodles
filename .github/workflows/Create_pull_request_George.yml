@@ -15,11 +15,11 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           commit-message: "Automated PR: ${{ github.event.head_commit.message }}"
           title: "Automated PR: ${{ github.event.head_commit.message }}"
           body: "This is an automated pull request created by GitHub Actions."
-          branch: "automated-pr-${{ github.run_number }}"
+          branch: "automated-pr-${{ github.ref }}"
           base: "main" # This indicates that the pull request should merge changes into the 'main' branch
           draft: false
           labels: "automated"
