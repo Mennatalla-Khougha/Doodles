@@ -17,12 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="text-3xl font-bold bg-slate-200">
-          <h1 className="bg-gradient-to-r from-blue-600 via-red-400 to-purple-500 inline-block text-transparent bg-clip-text">
+        <header className="text-3xl font-bold bg-slate-200 space-x-4">
+          <h1 className="bg-gradient-to-r from-blue-600 via-red-400 to-green-600 inline-block text-transparent bg-clip-text">
             Doodles
           </h1>
         </header>
-        <main>{children}</main>
+        <main className="p-4 space-x-4 space-y-4 flex">{children}</main>
         </body>
     </html>
   );

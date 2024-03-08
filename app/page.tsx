@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <>
       <h1>Doodles app Home page</h1>
+      <p>Welocme</p>
     </>
   );
 }
