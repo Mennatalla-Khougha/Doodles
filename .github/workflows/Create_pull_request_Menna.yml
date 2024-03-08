@@ -23,4 +23,4 @@ jobs:
           base: "main" # This indicates that the pull request should merge changes into the 'main' branch
           draft: false
           labels: "automated"
-          reviewers: "5XGeorgeX5" # Replace 'partner-username' with your partner's GitHub username
+          reviewers: "5XGeorgeX5"
